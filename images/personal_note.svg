@@ -5,7 +5,7 @@
         .text {
           font-family: "Comic Sans", "Comic Sans MS", Chalkboard, ChalkboardSE-Regular, "Marker Felt", Purisa, "URW Chancery L", cursive, sans-serif;
           color: limegreen;
-          font-size: 32px;
+          font-size: 28px;
           font-weight: bold;
           line-height: 1.2;
           margin: 0;
