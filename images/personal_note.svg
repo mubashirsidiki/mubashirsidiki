@@ -1,11 +1,11 @@
-<svg fill="none" viewBox="0 0 500 80" width="500" height="80" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 500 60" width="500" height="60" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
         .text {
           font-family: "Comic Sans", "Comic Sans MS", Chalkboard, ChalkboardSE-Regular, "Marker Felt", Purisa, "URW Chancery L", cursive, sans-serif;
           color: limegreen;
-          font-size: 32px;
+          font-size: 28px;
           font-weight: bold;
           line-height: 1.2;
           margin: 0;
