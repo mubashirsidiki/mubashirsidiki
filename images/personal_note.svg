@@ -1,6 +1,26 @@
-<svg fill="none" viewBox="0 0 500 60" width="500" height="60" xmlns="http://www.w3.org/2000/svg">
-  <text x="10" y="40" font-family="Comic Sans MS, cursive" font-size="36" fill="limegreen" font-weight="bold">
-    My Name is Mubashir and I like 
-    <tspan fill="red">AI</tspan>
-  </text>
+<svg fill="none" viewBox="0 0 430 40" width="430" height="40" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+        strong {
+          font-family: "Comic Sans", "Comic Sans MS", Chalkboard, ChalkboardSE-Regular, "Marker Felt", Purisa, "URW Chancery L", cursive, sans-serif;
+          color: limegreen;
+          font-size: 1.5em;
+        }
+
+        .blink {
+          animation: blink-animation 1.5s infinite;
+        }
+        @keyframes blink-animation {
+          0%, 50% {
+            opacity: 1;
+          }
+          51%, 100% {
+            opacity: 0;
+          }
+        }
+      </style>
+      <strong>My Name is Mubashir and I like <span class="blink">AI</span></strong>
+		</div>
+	</foreignObject>
 </svg>
