@@ -1,7 +1,7 @@
-<svg fill="none" viewBox="0 0 430 40" width="430" height="40" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 500 60" width="500" height="60" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .text { font-family: "Comic Sans", "Comic Sans MS", Chalkboard, ChalkboardSE-Regular, "Marker Felt", Purisa, "URW Chancery L", cursive, sans-serif; font-size: 32px; fill: limegreen; font-weight: bold; }
+      .text { font-family: "Comic Sans", "Comic Sans MS", Chalkboard, ChalkboardSE-Regular, "Marker Felt", Purisa, "URW Chancery L", cursive, sans-serif; font-size: 36px; fill: limegreen; font-weight: bold; }
       .blink { animation: blink 1s infinite; }
       @keyframes blink {
         0%, 50% { opacity: 1; }
@@ -9,5 +9,5 @@
       }
     </style>
   </defs>
-  <text x="10" y="25" class="text">My Name is Mubashir and I like <tspan class="blink">AI</tspan></text>
+  <text x="10" y="40" class="text">My Name is Mubashir and I like <tspan class="blink">AI</tspan></text>
 </svg>
