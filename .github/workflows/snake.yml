@@ -31,6 +31,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b output || git checkout output
           git add dist/
           git commit -m "Update snake animation" || exit 0
-          git push origin HEAD:output || git push origin HEAD:output --force 
+          git push origin output --force 
