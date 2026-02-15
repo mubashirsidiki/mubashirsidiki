@@ -9,6 +9,10 @@
 </div>
 
 <p align="center">
+<a href="https://mubashirsidiki.github.io/portfolio/" target="blank"><img align="center" src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="portfolio" /></a>
+</p>
+
+<p align="center">
 <a href="https://www.linkedin.com/in/mubashirsidiki/" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>&nbsp;
 <a href="https://github.com/mubashirsidiki" target="blank"><img align="center" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="github" /></a>&nbsp;
 <a href="https://stackoverflow.com/users/16115413/mubashir-ahmed-siddiqui" target="blank"><img align="center" src="https://img.shields.io/badge/Stack_Overflow-F58025?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="stackoverflow" /></a>&nbsp;
@@ -46,15 +50,33 @@
 
 ### <img src='https://media1.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif' width='25' /> My Github Stats:
 
-![Mubashir's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mubashirsidiki&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide=issues&count_private=true&include_all_commits=true)
+<p align="center">
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mubashirsidiki&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide=issues&count_private=true&include_all_commits=true" />
+</p>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mubashirsidiki&layout=compact&text_color=daf7dc&bg_color=151515&title_color=ffc857&hide=css,html)
+<p align="center">
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mubashirsidiki&layout=compact&text_color=daf7dc&bg_color=151515&title_color=ffc857&hide=css,html" />
+</p>
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=mubashirsidiki&theme=dark)](https://git.io/streak-stats)
+<p align="center">
+<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com/?user=mubashirsidiki&theme=dark" /></a>
+</p>
 
 ---
 
-⏳ **Year Progress:** { ███▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ } 12.60% as on ⏰ 15-Feb-2026
+<div align="center">
+  
+### ⏳ Year Progress
+
+```text
+{ ███▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ }
+```
+
+**12.60%** completed • 🗓️ 15-Feb-2026
+
+</div>
+
+---
 
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=mubashirsidiki&theme=react-dark&hide_border=true&area=true)
 

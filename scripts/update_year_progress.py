@@ -39,19 +39,49 @@ def update_readme(percentage, progress_bar, timestamp):
     # Format the date
     date_str = timestamp.strftime('%d-%b-%Y')
     
-    # Create the new progress line
-    new_line = f"⏳ **Year Progress:** {progress_bar} {percentage:.2f}% as on ⏰ {date_str}"
+    # Create the new progress section with beautiful formatting
+    new_section = f"""<div align="center">
+  
+### ⏳ Year Progress
+
+```text
+{progress_bar}
+```
+
+**{percentage:.2f}%** completed • 🗓️ {date_str}
+
+</div>"""
     
-    # Replace the old progress line
-    lines = content.split('\n')
-    for i, line in enumerate(lines):
-        if line.strip().startswith('⏳ **Year Progress:**'):
-            lines[i] = new_line
-            break
+    # Find and replace the year progress section using regex
+    import re
+    pattern = r'<div align="center">\s*\n\s*\n### ⏳ Year Progress\s*\n\s*\n```text\s*\n.*?\n```\s*\n\s*\n\*\*.*?\*\* completed • 🗓️ .*?\s*\n\s*\n</div>'
+    
+    if re.search(pattern, content, re.DOTALL):
+        content = re.sub(pattern, new_section, content, flags=re.DOTALL)
+    else:
+        # Fallback: try old format
+        lines = content.split('\n')
+        for i, line in enumerate(lines):
+            if '**Year Progress:**' in line or '### ⏳ Year Progress' in line:
+                # Find the section boundaries
+                start_idx = i
+                # Go back to find the opening div or line before
+                while start_idx > 0 and lines[start_idx-1].strip() not in ['---', '']:
+                    start_idx -= 1
+                
+                # Find end of section
+                end_idx = i
+                while end_idx < len(lines) - 1 and lines[end_idx+1].strip() not in ['---', '']:
+                    end_idx += 1
+                
+                # Replace the section
+                lines[start_idx:end_idx+1] = [new_section]
+                content = '\n'.join(lines)
+                break
     
     # Write back to file
     with open(readme_path, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(lines))
+        f.write(content)
     
     print(f"✅ Updated README with {percentage:.2f}% year progress")
     print(f"📊 Progress bar: {progress_bar}")
