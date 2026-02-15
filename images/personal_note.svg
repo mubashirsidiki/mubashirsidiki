@@ -2,11 +2,9 @@
   <defs>
     <style>
       @keyframes cycle {
-        0% { opacity: 0; }
-        5% { opacity: 0; }
-        25% { opacity: 1; }
-        50% { opacity: 0; }
-        100% { opacity: 0; }
+        0%, 24% { opacity: 0; }
+        25%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
       }
       .text {
         font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
@@ -14,10 +12,10 @@
         font-weight: bold;
         fill: limegreen;
       }
-      .word1 { animation: cycle 8s infinite 0s; }
-      .word2 { animation: cycle 8s infinite 2s; }
-      .word3 { animation: cycle 8s infinite 4s; }
-      .word4 { animation: cycle 8s infinite 6s; }
+      .word1 { animation: cycle 8s infinite 0s; opacity: 0; }
+      .word2 { animation: cycle 8s infinite 2s; opacity: 0; }
+      .word3 { animation: cycle 8s infinite 4s; opacity: 0; }
+      .word4 { animation: cycle 8s infinite 6s; opacity: 0; }
     </style>
   </defs>
   <text x="10" y="40" class="text">
