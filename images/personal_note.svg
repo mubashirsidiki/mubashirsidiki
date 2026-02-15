@@ -1,25 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="550" height="60" viewBox="0 0 550 60">
   <defs>
     <style>
-      @keyframes cycle {
-        0%, 24% { opacity: 0; }
-        25%, 49% { opacity: 1; }
-        50%, 100% { opacity: 0; }
-      }
       .text {
         font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
         font-size: 20px;
         font-weight: bold;
         fill: limegreen;
-        opacity: 0;
       }
-      .word1 { animation: cycle 8s infinite; animation-delay: -6s; }
-      .word2 { animation: cycle 8s infinite; animation-delay: -4s; }
-      .word3 { animation: cycle 8s infinite; animation-delay: -2s; }
-      .word4 { animation: cycle 8s infinite; animation-delay: 0s; }
+      #word {
+        opacity: 1;
+      }
     </style>
   </defs>
   <text x="10" y="40" class="text">
-    My Name is Mubashir and I like <tspan class="word1">AI</tspan><tspan class="word2">Coding</tspan><tspan class="word3">Open Source</tspan><tspan class="word4">Web Development</tspan>
+    My Name is Mubashir and I like <tspan id="word">AI</tspan>
   </text>
+  <script type="text/javascript">
+    <
+![CDATA[
+      const words = ["AI", "Coding", "Open Source", "Web Development"];
+      let index = 0;
+      const wordEl = document.getElementById("word");
+
+      function cycleWords() {
+        wordEl.textContent = words[index];
+        index = (index + 1) % words.length;
+      }
+
+      setInterval(cycleWords, 2000);
+    ]]>
+  </script>
 </svg>
