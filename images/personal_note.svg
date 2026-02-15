@@ -1,32 +1,34 @@
-<svg fill="none" viewBox="0 0 500 60" width="500" height="60" xmlns="http://www.w3.org/2000/svg">
-	<foreignObject width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<style>
-        .text {
-          font-family: "Comic Sans", "Comic Sans MS", Chalkboard, ChalkboardSE-Regular, "Marker Felt", Purisa, "URW Chancery L", cursive, sans-serif;
-          color: limegreen;
-          font-size: 28px;
-          font-weight: bold;
-          line-height: 1.2;
-          margin: 0;
-          padding: 10px 0;
-          white-space: nowrap;
-          overflow: hidden;
-        }
-
-        .blink {
-          animation: blink-animation 1.5s infinite;
-        }
-        @keyframes blink-animation {
-          0%, 50% {
-            opacity: 1;
-          }
-          51%, 100% {
-            opacity: 0;
-          }
-        }
-      </style>
-      <div class="text">My Name is Mubashir and I like <span class="blink">AI</span></div>
-		</div>
-	</foreignObject>
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="60" viewBox="0 0 550 60">
+  <defs>
+    <style>
+      @keyframes cycle {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        20% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .text {
+        font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: limegreen;
+      }
+      .word1 { animation: cycle 8s infinite 0s; }
+      .word2 { animation: cycle 8s infinite 2s; }
+      .word3 { animation: cycle 8s infinite 4s; }
+      .word4 { animation: cycle 8s infinite 6s; }
+    </style>
+  </defs>
+  <text x="10" y="40" class="text">
+    My Name is Mubashir and I like <tspan class="word1">AI</tspan>
+  </text>
+  <text x="10" y="40" class="text">
+    My Name is Mubashir and I like <tspan class="word2">Coding</tspan>
+  </text>
+  <text x="10" y="40" class="text">
+    My Name is Mubashir and I like <tspan class="word3">Open Source</tspan>
+  </text>
+  <text x="10" y="40" class="text">
+    My Name is Mubashir and I like <tspan class="word4">Web Development</tspan>
+  </text>
 </svg>
