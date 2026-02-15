@@ -11,23 +11,15 @@
         font-size: 20px;
         font-weight: bold;
         fill: limegreen;
+        opacity: 0;
       }
-      .word1 { animation: cycle 8s infinite 0s; opacity: 0; }
-      .word2 { animation: cycle 8s infinite 2s; opacity: 0; }
-      .word3 { animation: cycle 8s infinite 4s; opacity: 0; }
-      .word4 { animation: cycle 8s infinite 6s; opacity: 0; }
+      .word1 { animation: cycle 8s infinite; animation-delay: -6s; }
+      .word2 { animation: cycle 8s infinite; animation-delay: -4s; }
+      .word3 { animation: cycle 8s infinite; animation-delay: -2s; }
+      .word4 { animation: cycle 8s infinite; animation-delay: 0s; }
     </style>
   </defs>
   <text x="10" y="40" class="text">
-    My Name is Mubashir and I like <tspan class="word1">AI</tspan>
-  </text>
-  <text x="10" y="40" class="text">
-    My Name is Mubashir and I like <tspan class="word2">Coding</tspan>
-  </text>
-  <text x="10" y="40" class="text">
-    My Name is Mubashir and I like <tspan class="word3">Open Source</tspan>
-  </text>
-  <text x="10" y="40" class="text">
-    My Name is Mubashir and I like <tspan class="word4">Web Development</tspan>
+    My Name is Mubashir and I like <tspan class="word1">AI</tspan><tspan class="word2">Coding</tspan><tspan class="word3">Open Source</tspan><tspan class="word4">Web Development</tspan>
   </text>
 </svg>
