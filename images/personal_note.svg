@@ -5,19 +5,21 @@
         .text {
           font-family: "Comic Sans", "Comic Sans MS", Chalkboard, ChalkboardSE-Regular, "Marker Felt", Purisa, "URW Chancery L", cursive, sans-serif;
           color: limegreen;
-          font-size: 40px; /* Increased font size */
+          font-size: 40px;
           font-weight: bold;
           line-height: 1.2;
           margin: 0;
           padding: 10px 0;
           white-space: nowrap;
+          overflow: hidden;
         }
 
         .words {
           display: inline-block;
           position: relative;
-          width: 280px;
+          width: 350px; /* Increased width to prevent truncation */
           height: 1.2em;
+          overflow: hidden;
           vertical-align: bottom;
         }
 
@@ -40,7 +42,7 @@
         }
 
         .blink {
-          animation: blink 4s infinite; /* Slower blink */
+          animation: blink 2.5s infinite;
         }
 
         @keyframes blink {
@@ -52,10 +54,9 @@
       <div class="text">
         My Name is Mubashir and I like 
         <span class="words blink">
-          <span>Development</span>
           <span>AI</span>
-          <span>Open Source</span>
-          </span>Building things</span>
+          <span>Coding</span>
+          <span>Data Science</span>
         </span>
       </div>
     </div>
