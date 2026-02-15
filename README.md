@@ -45,18 +45,18 @@
 ---
 
 ### <img src='https://media1.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif' width='25' /> My Github Stats:
-![Mubashir's github stats](https://github-readme-stats.vercel.app/api?username=mubashir-dev&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide=issues&count_private=true&include_all_commits=true)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mubashir-dev&layout=compact&text_color=daf7dc&bg_color=151515&hide=css,html)](https://github.com/anuraghazra/github-readme-stats)
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=mubashir-dev&theme=dark)](https://git.io/streak-stats)
+
+![Mubashir's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mubashirsidiki&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide=issues&count_private=true&include_all_commits=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mubashirsidiki&layout=compact&text_color=daf7dc&bg_color=151515&title_color=ffc857&hide=css,html)
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=mubashirsidiki&theme=dark)](https://git.io/streak-stats)
 
 ---
 
-⏳ **Year Progress:** { ██████████████████▁▁▁▁▁▁▁▁▁▁▁ } 54.54% as on ⏰ 13-Jul-2025
+⏳ **Year Progress:** { ███▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ } 12.60% as on ⏰ 15-Feb-2026
 
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=mubashirsidiki&theme=react-dark&hide_border=true&area=true)
-
-<!-- Snake animation (uncomment if you want to try it later): -->
-<!-- ![Snake animation](https://github.com/mubashirsidiki/mubashirsidiki/blob/output/dist/github-contribution-grid-snake.gif) -->
 
 
 ### 📌 A Quote I Like:
