@@ -1,40 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="550" height="60" viewBox="0 0 550 60">
   <defs>
     <style>
+      @keyframes cycle {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        20% { opacity: 0; }
+        100% { opacity: 0; }
+      }
       .text {
         font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif;
         font-size: 20px;
         font-weight: bold;
         fill: limegreen;
       }
+      .word1 { animation: cycle 8s infinite 0s; }
+      .word2 { animation: cycle 8s infinite 2s; }
+      .word3 { animation: cycle 8s infinite 4s; }
+      .word4 { animation: cycle 8s infinite 6s; }
     </style>
   </defs>
-
-  <!-- AI - shows at 0-2s, 8-10s, etc -->
-  <text x="10" y="40" class="text" opacity="0">
-    My Name is Mubashir and I like AI
-    <set attributeName="opacity" to="1" begin="0s;8s;16s;24s" dur="2s" />
-    <set attributeName="opacity" to="0" begin="2s;10s;18s;26s" dur="0.1s" />
+  <text x="10" y="40" class="text">
+    My Name is Mubashir and I like <tspan class="word1">AI</tspan>
   </text>
-
-  <!-- Coding - shows at 2-4s, 10-12s, etc -->
-  <text x="10" y="40" class="text" opacity="0">
-    My Name is Mubashir and I like Coding
-    <set attributeName="opacity" to="1" begin="2s;10s;18s;26s" dur="2s" />
-    <set attributeName="opacity" to="0" begin="4s;12s;20s;28s" dur="0.1s" />
+  <text x="10" y="40" class="text">
+    My Name is Mubashir and I like <tspan class="word2">Coding</tspan>
   </text>
-
-  <!-- Open Source - shows at 4-6s, 12-14s, etc -->
-  <text x="10" y="40" class="text" opacity="0">
-    My Name is Mubashir and I like Open Source
-    <set attributeName="opacity" to="1" begin="4s;12s;20s;28s" dur="2s" />
-    <set attributeName="opacity" to="0" begin="6s;14s;22s;30s" dur="0.1s" />
+  <text x="10" y="40" class="text">
+    My Name is Mubashir and I like <tspan class="word3">Open Source</tspan>
   </text>
-
-  <!-- Web Development - shows at 6-8s, 14-16s, etc -->
-  <text x="10" y="40" class="text" opacity="0">
-    My Name is Mubashir and I like Web Development
-    <set attributeName="opacity" to="1" begin="6s;14s;22s;30s" dur="2s" />
-    <set attributeName="opacity" to="0" begin="8s;16s;24s;32s" dur="0.1s" />
+  <text x="10" y="40" class="text">
+    My Name is Mubashir and I like <tspan class="word4">Web Development</tspan>
   </text>
 </svg>
