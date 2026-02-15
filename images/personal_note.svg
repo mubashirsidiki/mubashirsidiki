@@ -42,7 +42,7 @@
         }
 
         .blink {
-          animation: blink 2.5s infinite; /* Slower blink */
+          animation: blink 4s infinite; /* Slower blink */
         }
 
         @keyframes blink {
