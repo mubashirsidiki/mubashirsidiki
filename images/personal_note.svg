@@ -7,27 +7,34 @@
         font-weight: bold;
         fill: limegreen;
       }
-      #word {
-        opacity: 1;
-      }
     </style>
   </defs>
-  <text x="10" y="40" class="text">
-    My Name is Mubashir and I like <tspan id="word">AI</tspan>
+
+  <!-- AI - shows at 0-2s, 8-10s, etc -->
+  <text x="10" y="40" class="text" opacity="0">
+    My Name is Mubashir and I like AI
+    <set attributeName="opacity" to="1" begin="0s;8s;16s;24s" dur="2s" />
+    <set attributeName="opacity" to="0" begin="2s;10s;18s;26s" dur="0.1s" />
   </text>
-  <script type="text/javascript">
-    <
-![CDATA[
-      const words = ["AI", "Coding", "Open Source", "Web Development"];
-      let index = 0;
-      const wordEl = document.getElementById("word");
 
-      function cycleWords() {
-        wordEl.textContent = words[index];
-        index = (index + 1) % words.length;
-      }
+  <!-- Coding - shows at 2-4s, 10-12s, etc -->
+  <text x="10" y="40" class="text" opacity="0">
+    My Name is Mubashir and I like Coding
+    <set attributeName="opacity" to="1" begin="2s;10s;18s;26s" dur="2s" />
+    <set attributeName="opacity" to="0" begin="4s;12s;20s;28s" dur="0.1s" />
+  </text>
 
-      setInterval(cycleWords, 2000);
-    ]]>
-  </script>
+  <!-- Open Source - shows at 4-6s, 12-14s, etc -->
+  <text x="10" y="40" class="text" opacity="0">
+    My Name is Mubashir and I like Open Source
+    <set attributeName="opacity" to="1" begin="4s;12s;20s;28s" dur="2s" />
+    <set attributeName="opacity" to="0" begin="6s;14s;22s;30s" dur="0.1s" />
+  </text>
+
+  <!-- Web Development - shows at 6-8s, 14-16s, etc -->
+  <text x="10" y="40" class="text" opacity="0">
+    My Name is Mubashir and I like Web Development
+    <set attributeName="opacity" to="1" begin="6s;14s;22s;30s" dur="2s" />
+    <set attributeName="opacity" to="0" begin="8s;16s;24s;32s" dur="0.1s" />
+  </text>
 </svg>
