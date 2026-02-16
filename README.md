@@ -3,7 +3,7 @@
   <img src="https://github.com/BrunnerLivio/brunnerlivio/blob/master/images/welcome.png?raw=true" style="max-width: 100%;" alt="Welcome to my Github Profile" />
   <br />
   <br />
-  <img height="60" alt="My Name is Mubashir and I like doing AI" src="images/personal_note.svg" />
+  <img height="60" alt="My Name is Mubashir and I like Full Stack AI Development" src="images/personal_note.svg" />
   <br />
   <br />
 </div>
@@ -22,13 +22,13 @@
 </p>
 
 ### <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="45" /> About Me:
-- 🧠 AI Engineer + Backend Developer working on open-source, GenAI agents, and scalable systems.
+- 💻 Full Stack AI Developer building scalable web applications, AI-powered systems, and open-source tools.
 - 🏆 Winner of Traversaal x Optimized AI Hackathon, judged by Google & NVIDIA engineers.
-- 🌍 Co-founder of [Hoopoes](https://github.com/hoopoes) – empowering devs through open-source collaboration.
-- 💻 I use daily: **.py**, **.ts**, **.js**, **.sql**, **bash**
-- ⚙️ I build with: **FastAPI**, **LangChain**, **Docker**, **Azure**, **Twilio**, **MongoDB**, **Postgres**, **React/Next.js**
-- 💬 Talk to me about AI agents, OSS, community, storytelling, or cricket!
-- ⚡ Fun fact: I fell in love with coding early — now it's how I shape ideas into reality.
+- 🌍 Co-founder of [Hoopoes](https://github.com/hoopoes), empowering devs through open-source collaboration.
+- 🛠️ I use daily: **.py**, **.ts**, **.js**, **.sql**, **bash**
+- ⚙️ I build with: **React/Next.js**, **FastAPI**, **Docker**, **Azure**, **MongoDB**, **Postgres**, **LangChain**, **Twilio**
+- 💬 Talk to me about full stack development, system design, AI integration, OSS, or cricket!
+- ⚡ Fun fact: I fell in love with coding early; now it's how I shape ideas into reality.
 
 ---
 
