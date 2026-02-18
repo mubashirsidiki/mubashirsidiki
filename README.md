@@ -67,15 +67,16 @@
 
 | 📊 **Metric** | 📈 **Count** |
 |:-------------:|:------------:|
-| **Total Contributions** | 1,281 |
-| **Pull Requests** | 185 (167 merged · 90.3% rate) |
-| **Issues Opened** | 60 (16 closed) |
-| **Stars Earned** | 2 |
+| **Total Contributions** | 1,282 |
+| **Pull Requests** | 16 (8 merged · 50.0% rate) |
+| **Issues Opened** | 2 (1 closed) |
+| **Stars Earned** | 5 |
 | **Public Repos** | 60 |
 | **Followers** | 9 |
 
 </div>
 <!-- END_GITHUB_STATS -->
+
 
 ---
 
@@ -87,7 +88,7 @@
 { ███▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ }
 ```
 
-**13.17%** completed • 🗓️ 18-Feb-2026
+**13.33%** completed • 🗓️ 18-Feb-2026
 
 </div>
 
