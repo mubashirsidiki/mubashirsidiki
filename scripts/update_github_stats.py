@@ -237,10 +237,6 @@ def get_all_stats():
     print("  - Fetching repo stats...")
     repo_stats = get_repo_stats()
 
-    # Get language stats
-    print("  - Fetching language stats...")
-    language_stats = get_language_stats()
-
     return {
         'total_contributions': public_commits + private_contributions,
         'public_commits': public_commits,
@@ -258,102 +254,8 @@ def get_all_stats():
         'public_repos': user_stats['repositories']['totalCount'],
         'followers': user_stats['followers']['totalCount'],
         'following': user_stats['following']['totalCount'],
-        'account_created': user_stats['createdAt'][:10],
-        'languages': language_stats
+        'account_created': user_stats['createdAt'][:10]
     }
-
-def get_language_stats():
-    """Fetch accurate language statistics excluding forks and bloated files"""
-    # Languages to exclude (not real code or bloated)
-    EXCLUDED_LANGUAGES = {
-        'Jupyter Notebook', 'HTML', 'CSS', 'SCSS', 'Dockerfile',
-        'Shell', 'PowerShell', 'Batchfile', 'Makefile', 'Roff',
-        'HCL', 'XSLT', 'MDX', 'Game Maker Language'
-    }
-
-    # Repos to exclude (forks with bloated data)
-    EXCLUDED_REPOS = {
-        'langchain', 'AgentPro', 'datasharing', 'jackettio',
-        'lstm-siamese-text-similarity', 'datasciencecoursera',
-        'certifications_work', 'clone-product-ai-platform',
-        'prac_clone-product-ai-platform', '2_clone-product-ai-platform',
-        'script_clone-product-ai-platform', 'avi_ai_platform'
-    }
-
-    query = f'''
-    query {{
-      user(login: "{USERNAME}") {{
-        repositories(first: 100, ownerAffiliations: OWNER) {{
-          nodes {{
-            name
-            isFork
-            languages(first: 50) {{
-              edges {{
-                size
-                node {{
-                  name
-                  color
-                }}
-              }}
-            }}
-          }}
-        }}
-      }}
-    }}
-    '''
-    result = run_graphql_query(query)
-
-    # Custom colors for better distinction
-    CUSTOM_COLORS = {
-        'Python': '3776AB',       # Blue
-        'TypeScript': '3178C6',   # Microsoft blue
-        'JavaScript': 'F7DF1E',   # Yellow
-        'C#': '512BD4',           # Purple
-        'Bicep': '519ABA',        # Azure blue
-        'R': '276DC3',            # Darker blue
-    }
-
-    lang_totals = {}
-
-    for repo in result['data']['user']['repositories']['nodes']:
-        # Skip excluded repos and forks
-        if repo['name'] in EXCLUDED_REPOS or repo['isFork']:
-            continue
-
-        for edge in repo['languages']['edges']:
-            lang_name = edge['node']['name']
-            if lang_name in EXCLUDED_LANGUAGES:
-                continue
-
-            if lang_name not in lang_totals:
-                color = edge['node']['color']
-                # Use custom color if defined, otherwise use GitHub's color
-                lang_totals[lang_name] = {
-                    'bytes': 0,
-                    'color': CUSTOM_COLORS.get(lang_name, color.lstrip('#') if color else '888888')
-                }
-            lang_totals[lang_name]['bytes'] += edge['size']
-
-    # Calculate percentages
-    total_bytes = sum(l['bytes'] for l in lang_totals.values())
-
-    if total_bytes == 0:
-        return []
-
-    # Sort by bytes and get top languages
-    sorted_langs = sorted(lang_totals.items(), key=lambda x: -x[1]['bytes'])[:6]
-
-    languages = []
-    for name, data in sorted_langs:
-        percentage = round((data['bytes'] / total_bytes) * 100, 1)
-        if percentage >= 1:  # Only include languages with >= 1%
-            languages.append({
-                'name': name,
-                'percentage': percentage,
-                'color': data['color']
-            })
-
-    return languages
 
 def update_readme(stats):
     """Update the README.md with accurate stats"""
@@ -361,16 +263,6 @@ def update_readme(stats):
 
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
-
-    # Generate language badges
-    lang_badges = ""
-    if stats.get('languages'):
-        lang_badges = '\n<p align="center">\n'
-        for lang in stats['languages']:
-            # Use URL encoding for special characters
-            lang_name = lang['name'].replace('#', '%23').replace(' ', '%20')
-            lang_badges += f'  <img src="https://img.shields.io/badge/{lang["name"]}-{lang["percentage"]}%25-{lang["color"]}?style=flat-square&labelColor=151515&logo={lang["name"].lower().replace("#", "-")}&logoColor=white" alt="{lang["name"]}" />\n'
-        lang_badges += '</p>'
 
     # Create the dynamic stats badges section (no Vercel dependency for stats)
     new_stats_section = f'''<!-- START_GITHUB_STATS -->
@@ -386,7 +278,6 @@ def update_readme(stats):
   <img src="https://img.shields.io/badge/❗_Issues-{stats['total_issues']:,}-f0883e?style=for-the-badge&labelColor=151515&color=151515" alt="Issues" />
   <img src="https://img.shields.io/badge/👥_Followers-{stats['followers']:,}-a371f7?style=for-the-badge&labelColor=151515&color=151515" alt="Followers" />
 </p>
-{lang_badges}
 <!-- END_GITHUB_STATS -->'''
 
     # Pattern to match the stats section
@@ -427,11 +318,6 @@ def main():
         print(f"  Stars Earned: {stats['total_stars']:,}")
         print(f"  Public Repos: {stats['public_repos']:,}")
         print(f"  Followers: {stats['followers']:,}")
-
-        if stats.get('languages'):
-            print("\n🔤 Top Languages:")
-            for lang in stats['languages']:
-                print(f"    {lang['name']}: {lang['percentage']}%")
 
         if update_readme(stats):
             print("\n✅ README updated successfully!")
