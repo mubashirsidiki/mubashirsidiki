@@ -50,28 +50,9 @@
 
 ### <img src='https://media1.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif' width='25' /> My Github Stats:
 
-<p align="center">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mubashirsidiki&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide=issues,prs&count_private=true&include_all_commits=true" />
-</p>
-
-<p align="center">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mubashirsidiki&layout=compact&text_color=daf7dc&bg_color=151515&title_color=ffc857&hide=css,html" />
-</p>
-
-<p align="center">
-<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com/?user=mubashirsidiki&theme=dark" /></a>
-</p>
-
 <!-- START_GITHUB_STATS -->
 <p align="center">
-  <a href="https://github.com/mubashirsidiki">
-    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=mubashirsidiki&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide_border=true&hide_title=true&hide=issues,prs,contribs&count_private=true&include_all_commits=true&card_height=180" />
-    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=mubashirsidiki&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide_border=true&hide=stars,commits,contribs,issues&count_private=true&show=prs" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🎯_Total_Contributions-1,281-8ac926?style=for-the-badge&labelColor=151515&color=151515&logoColor=white" alt="Total Contributions" />
+  <img src="https://img.shields.io/badge/🎯_Total_Contributions-1,281-8ac926?style=for-the-badge&labelColor=151515&color=151515" alt="Total Contributions" />
   <img src="https://img.shields.io/badge/⭐_Stars_Earned-2-ffc857?style=for-the-badge&labelColor=151515&color=151515" alt="Stars" />
   <img src="https://img.shields.io/badge/📁_Public_Repos-60-58a6ff?style=for-the-badge&labelColor=151515&color=151515" alt="Repos" />
 </p>
@@ -83,6 +64,14 @@
   <img src="https://img.shields.io/badge/👥_Followers-9-a371f7?style=for-the-badge&labelColor=151515&color=151515" alt="Followers" />
 </p>
 <!-- END_GITHUB_STATS -->
+
+<p align="center">
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mubashirsidiki&layout=compact&text_color=daf7dc&bg_color=151515&title_color=ffc857&hide=css,html" />
+</p>
+
+<p align="center">
+<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com/?user=mubashirsidiki&theme=dark" /></a>
+</p>
 
 
 ---

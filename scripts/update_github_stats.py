@@ -264,17 +264,10 @@ def update_readme(stats):
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Create the dynamic stats badges section
+    # Create the dynamic stats badges section (no Vercel dependency for stats)
     new_stats_section = f'''<!-- START_GITHUB_STATS -->
 <p align="center">
-  <a href="https://github.com/{USERNAME}">
-    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username={USERNAME}&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide_border=true&hide_title=true&hide=issues,prs,contribs&count_private=true&include_all_commits=true&card_height=180" />
-    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username={USERNAME}&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide_border=true&hide=stars,commits,contribs,issues&count_private=true&show=prs" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🎯_Total_Contributions-{stats['total_contributions']:,}-8ac926?style=for-the-badge&labelColor=151515&color=151515&logoColor=white" alt="Total Contributions" />
+  <img src="https://img.shields.io/badge/🎯_Total_Contributions-{stats['total_contributions']:,}-8ac926?style=for-the-badge&labelColor=151515&color=151515" alt="Total Contributions" />
   <img src="https://img.shields.io/badge/⭐_Stars_Earned-{stats['total_stars']:,}-ffc857?style=for-the-badge&labelColor=151515&color=151515" alt="Stars" />
   <img src="https://img.shields.io/badge/📁_Public_Repos-{stats['public_repos']:,}-58a6ff?style=for-the-badge&labelColor=151515&color=151515" alt="Repos" />
 </p>
