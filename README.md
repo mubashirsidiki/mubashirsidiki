@@ -62,6 +62,12 @@
 <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com/?user=mubashirsidiki&theme=dark" /></a>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Total_PRs-185-blue?style=for-the-badge&logo=github" alt="Total PRs" />
+  <img src="https://img.shields.io/badge/Merged-167-brightgreen?style=for-the-badge&logo=github" alt="Merged PRs" />
+  <img src="https://img.shields.io/badge/Merge_Rate-90%25-success?style=for-the-badge&logo=github" alt="Merge Rate" />
+</p>
+
 ---
 
 <div align="center">
