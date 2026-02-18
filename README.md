@@ -51,7 +51,7 @@
 ### <img src='https://media1.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif' width='25' /> My Github Stats:
 
 <p align="center">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mubashirsidiki&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide=issues&count_private=true&include_all_commits=true" />
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mubashirsidiki&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide=issues,prs&count_private=true&include_all_commits=true" />
 </p>
 
 <p align="center">
@@ -62,11 +62,20 @@
 <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com/?user=mubashirsidiki&theme=dark" /></a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Total_PRs-185-blue?style=for-the-badge&logo=github" alt="Total PRs" />
-  <img src="https://img.shields.io/badge/Merged-167-brightgreen?style=for-the-badge&logo=github" alt="Merged PRs" />
-  <img src="https://img.shields.io/badge/Merge_Rate-90%25-success?style=for-the-badge&logo=github" alt="Merge Rate" />
-</p>
+<!-- START_GITHUB_STATS -->
+<div align="center">
+
+| 📊 **Metric** | 📈 **Count** |
+|:-------------:|:------------:|
+| **Total Contributions** | 1,281 |
+| **Pull Requests** | 185 (167 merged · 90.3% rate) |
+| **Issues Opened** | 60 (16 closed) |
+| **Stars Earned** | 2 |
+| **Public Repos** | 60 |
+| **Followers** | 9 |
+
+</div>
+<!-- END_GITHUB_STATS -->
 
 ---
 

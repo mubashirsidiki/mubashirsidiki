@@ -1,42 +1,56 @@
-name: Update Year Progress
+name: Update GitHub Stats
 
 on:
   schedule:
     # Runs every day at 00:00 UTC
     - cron: '0 0 * * *'
   workflow_dispatch: # Allows manual trigger
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_github_stats.py'
 
 permissions:
   contents: write
 
 jobs:
-  update-readme:
+  update-stats:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      
-      - name: Run update script
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run year progress update
         run: python scripts/update_year_progress.py
-      
+
+      - name: Run stats update script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_github_stats.py
+
       - name: Check for changes
         id: verify_diff
         run: |
           git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
-      
+
       - name: Commit and push if changed
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "🔄 Auto-update: Year progress [$(date +'%Y-%m-%d')]"
+          git commit -m "📊 Auto-update: GitHub stats [$(date +'%Y-%m-%d')]"
           git push
