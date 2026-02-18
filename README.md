@@ -66,7 +66,7 @@
 <!-- END_GITHUB_STATS -->
 
 <p align="center">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mubashirsidiki&layout=compact&text_color=daf7dc&bg_color=151515&title_color=ffc857&hide=css,html" />
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mubashirsidiki&layout=compact&text_color=daf7dc&bg_color=151515&title_color=ffc857&hide=css,html,jupyter%20notebook&langs_count=8&exclude_repo=langchain,AgentPro,datasharing,jackettio,lstm-siamese-text-similarity,datasciencecoursera,certifications_work" />
 </p>
 
 <p align="center">
