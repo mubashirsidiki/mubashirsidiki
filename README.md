@@ -63,18 +63,25 @@
 </p>
 
 <!-- START_GITHUB_STATS -->
-<div align="center">
+<p align="center">
+  <a href="https://github.com/mubashirsidiki">
+    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=mubashirsidiki&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide_border=true&hide_title=true&hide=issues,prs,contribs&count_private=true&include_all_commits=true&card_height=180" />
+    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=mubashirsidiki&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide_border=true&hide=stars,commits,contribs,issues&count_private=true&show=prs" />
+  </a>
+</p>
 
-| 📊 **Metric** | 📈 **Count** |
-|:-------------:|:------------:|
-| **Total Contributions** | 1,282 |
-| **Pull Requests** | 16 (8 merged · 50.0% rate) |
-| **Issues Opened** | 2 (1 closed) |
-| **Stars Earned** | 5 |
-| **Public Repos** | 60 |
-| **Followers** | 9 |
+<p align="center">
+  <img src="https://img.shields.io/badge/🎯_Total_Contributions-1,281-8ac926?style=for-the-badge&labelColor=151515&color=151515&logoColor=white" alt="Total Contributions" />
+  <img src="https://img.shields.io/badge/⭐_Stars_Earned-2-ffc857?style=for-the-badge&labelColor=151515&color=151515" alt="Stars" />
+  <img src="https://img.shields.io/badge/📁_Public_Repos-60-58a6ff?style=for-the-badge&labelColor=151515&color=151515" alt="Repos" />
+</p>
 
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/🔄_Pull_Requests-185-238636?style=for-the-badge&labelColor=151515&color=151515" alt="PRs" />
+  <img src="https://img.shields.io/badge/✅_Merged-167_(90%25)-238636?style=for-the-badge&labelColor=151515&color=151515" alt="Merged" />
+  <img src="https://img.shields.io/badge/❗_Issues-60-f0883e?style=for-the-badge&labelColor=151515&color=151515" alt="Issues" />
+  <img src="https://img.shields.io/badge/👥_Followers-9-a371f7?style=for-the-badge&labelColor=151515&color=151515" alt="Followers" />
+</p>
 <!-- END_GITHUB_STATS -->
 
 

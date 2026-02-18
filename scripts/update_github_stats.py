@@ -264,66 +264,38 @@ def update_readme(stats):
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Create the stats section
-    new_stats_section = f'''### <img src='https://media1.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif' width='25' /> My Github Stats:
-
+    # Create the dynamic stats badges section
+    new_stats_section = f'''<!-- START_GITHUB_STATS -->
 <p align="center">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username={USERNAME}&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide=issues,prs&count_private=true&include_all_commits=true" />
+  <a href="https://github.com/{USERNAME}">
+    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username={USERNAME}&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide_border=true&hide_title=true&hide=issues,prs,contribs&count_private=true&include_all_commits=true&card_height=180" />
+    <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username={USERNAME}&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide_border=true&hide=stars,commits,contribs,issues&count_private=true&show=prs" />
+  </a>
 </p>
 
 <p align="center">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username={USERNAME}&layout=compact&text_color=daf7dc&bg_color=151515&title_color=ffc857&hide=css,html" />
+  <img src="https://img.shields.io/badge/🎯_Total_Contributions-{stats['total_contributions']:,}-8ac926?style=for-the-badge&labelColor=151515&color=151515&logoColor=white" alt="Total Contributions" />
+  <img src="https://img.shields.io/badge/⭐_Stars_Earned-{stats['total_stars']:,}-ffc857?style=for-the-badge&labelColor=151515&color=151515" alt="Stars" />
+  <img src="https://img.shields.io/badge/📁_Public_Repos-{stats['public_repos']:,}-58a6ff?style=for-the-badge&labelColor=151515&color=151515" alt="Repos" />
 </p>
 
 <p align="center">
-<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com/?user={USERNAME}&theme=dark" /></a>
+  <img src="https://img.shields.io/badge/🔄_Pull_Requests-{stats['total_prs']:,}-238636?style=for-the-badge&labelColor=151515&color=151515" alt="PRs" />
+  <img src="https://img.shields.io/badge/✅_Merged-{stats['merged_prs']:,}_({stats['merge_rate']}%25)-238636?style=for-the-badge&labelColor=151515&color=151515" alt="Merged" />
+  <img src="https://img.shields.io/badge/❗_Issues-{stats['total_issues']:,}-f0883e?style=for-the-badge&labelColor=151515&color=151515" alt="Issues" />
+  <img src="https://img.shields.io/badge/👥_Followers-{stats['followers']:,}-a371f7?style=for-the-badge&labelColor=151515&color=151515" alt="Followers" />
 </p>
-
-<!-- START_GITHUB_STATS -->
-<div align="center">
-
-| 📊 **Metric** | 📈 **Count** |
-|:-------------:|:------------:|
-| **Total Contributions** | {stats['total_contributions']:,} |
-| **Pull Requests** | {stats['total_prs']:,} ({stats['merged_prs']:,} merged · {stats['merge_rate']}% rate) |
-| **Issues Opened** | {stats['total_issues']:,} ({stats['closed_issues']:,} closed) |
-| **Stars Earned** | {stats['total_stars']:,} |
-| **Public Repos** | {stats['public_repos']:,} |
-| **Followers** | {stats['followers']:,} |
-
-</div>
 <!-- END_GITHUB_STATS -->'''
 
     # Pattern to match the stats section
-    pattern = r"### <img src='https://media1\.giphy\.com/media/du3J3cXyzhj75IOgvA/giphy\.gif' width='25' /> My Github Stats:.*?(?=\n---\n\n<div align=\"center\">\s*\n\s*\n### ⏳ Year Progress)"
+    stats_pattern = r'<!-- START_GITHUB_STATS -->.*?<!-- END_GITHUB_STATS -->'
 
-    if re.search(pattern, content, re.DOTALL):
-        content = re.sub(pattern, new_stats_section + '\n\n', content, flags=re.DOTALL)
+    if re.search(stats_pattern, content, re.DOTALL):
+        content = re.sub(stats_pattern, new_stats_section, content, flags=re.DOTALL)
         print("✅ Updated existing stats section")
     else:
-        # Try to find and update just the dynamic stats table
-        table_pattern = r'<!-- START_GITHUB_STATS -->.*?<!-- END_GITHUB_STATS -->'
-        if re.search(table_pattern, content, re.DOTALL):
-            # Extract just the table part
-            table_section = f'''<!-- START_GITHUB_STATS -->
-<div align="center">
-
-| 📊 **Metric** | 📈 **Count** |
-|:-------------:|:------------:|
-| **Total Contributions** | {stats['total_contributions']:,} |
-| **Pull Requests** | {stats['total_prs']:,} ({stats['merged_prs']:,} merged · {stats['merge_rate']}% rate) |
-| **Issues Opened** | {stats['total_issues']:,} ({stats['closed_issues']:,} closed) |
-| **Stars Earned** | {stats['total_stars']:,} |
-| **Public Repos** | {stats['public_repos']:,} |
-| **Followers** | {stats['followers']:,} |
-
-</div>
-<!-- END_GITHUB_STATS -->'''
-            content = re.sub(table_pattern, table_section, content, flags=re.DOTALL)
-            print("✅ Updated dynamic stats table")
-        else:
-            print("⚠️ Could not find stats section to update")
-            return False
+        print("⚠️ Could not find stats section to update")
+        return False
 
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(content)
