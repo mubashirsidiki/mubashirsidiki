@@ -52,7 +52,7 @@
 
 <!-- START_GITHUB_STATS -->
 <p align="center">
-  <img src="https://img.shields.io/badge/🎯_Total_Contributions-1,284-8ac926?style=for-the-badge&labelColor=151515&color=151515" alt="Total Contributions" />
+  <img src="https://img.shields.io/badge/🎯_Total_Contributions-1,286-8ac926?style=for-the-badge&labelColor=151515&color=151515" alt="Total Contributions" />
   <img src="https://img.shields.io/badge/⭐_Stars_Earned-5-ffc857?style=for-the-badge&labelColor=151515&color=151515" alt="Stars" />
   <img src="https://img.shields.io/badge/📁_Public_Repos-60-58a6ff?style=for-the-badge&labelColor=151515&color=151515" alt="Repos" />
 </p>
@@ -62,12 +62,6 @@
   <img src="https://img.shields.io/badge/✅_Merged-8_(50.0%25)-238636?style=for-the-badge&labelColor=151515&color=151515" alt="Merged" />
   <img src="https://img.shields.io/badge/❗_Issues-2-f0883e?style=for-the-badge&labelColor=151515&color=151515" alt="Issues" />
   <img src="https://img.shields.io/badge/👥_Followers-9-a371f7?style=for-the-badge&labelColor=151515&color=151515" alt="Followers" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-39.3%25-3776AB?style=flat-square&labelColor=151515&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-38.7%25-3178C6?style=flat-square&labelColor=151515&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-21.9%25-F7DF1E?style=flat-square&labelColor=151515&logo=javascript&logoColor=white" alt="JavaScript" />
 </p>
 <!-- END_GITHUB_STATS -->
 
