@@ -38,7 +38,7 @@ jobs:
 
       - name: Run stats update script
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_PERSONAL }}
         run: python scripts/update_github_stats.py
 
       - name: Check for changes
