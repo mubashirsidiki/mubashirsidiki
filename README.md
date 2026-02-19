@@ -52,16 +52,8 @@
 
 <!-- START_GITHUB_STATS -->
 <p align="center">
-  <img src="https://img.shields.io/badge/🎯_Total_Contributions-1,292-8ac926?style=for-the-badge&labelColor=151515&color=151515" alt="Total Contributions" />
-  <img src="https://img.shields.io/badge/⭐_Stars_Earned-5-ffc857?style=for-the-badge&labelColor=151515&color=151515" alt="Stars" />
-  <img src="https://img.shields.io/badge/📁_Public_Repos-61-58a6ff?style=for-the-badge&labelColor=151515&color=151515" alt="Repos" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🔄_Pull_Requests-16-238636?style=for-the-badge&labelColor=151515&color=151515" alt="PRs" />
-  <img src="https://img.shields.io/badge/✅_Merged-8_(50.0%25)-238636?style=for-the-badge&labelColor=151515&color=151515" alt="Merged" />
-  <img src="https://img.shields.io/badge/❗_Issues-2-f0883e?style=for-the-badge&labelColor=151515&color=151515" alt="Issues" />
-  <img src="https://img.shields.io/badge/👥_Followers-9-a371f7?style=for-the-badge&labelColor=151515&color=151515" alt="Followers" />
+  <img src="https://img.shields.io/badge/🔄_Pull_Requests-185-238636?style=for-the-badge&labelColor=151515&color=151515" alt="PRs" />
+  <img src="https://img.shields.io/badge/✅_Merged-167_(90.3%25)-238636?style=for-the-badge&labelColor=151515&color=151515" alt="Merged" />
 </p>
 <!-- END_GITHUB_STATS -->
 
