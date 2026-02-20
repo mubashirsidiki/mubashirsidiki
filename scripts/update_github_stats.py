@@ -264,19 +264,11 @@ def update_readme(stats):
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Create the dynamic stats badges section (no Vercel dependency for stats)
+    # Create the dynamic stats badges section (only Pull Requests & Merged)
     new_stats_section = f'''<!-- START_GITHUB_STATS -->
 <p align="center">
-  <img src="https://img.shields.io/badge/🎯_Total_Contributions-{stats['total_contributions']:,}-8ac926?style=for-the-badge&labelColor=151515&color=151515" alt="Total Contributions" />
-  <img src="https://img.shields.io/badge/⭐_Stars_Earned-{stats['total_stars']:,}-ffc857?style=for-the-badge&labelColor=151515&color=151515" alt="Stars" />
-  <img src="https://img.shields.io/badge/📁_Public_Repos-{stats['public_repos']:,}-58a6ff?style=for-the-badge&labelColor=151515&color=151515" alt="Repos" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🔄_Pull_Requests-{stats['total_prs']:,}-238636?style=for-the-badge&labelColor=151515&color=151515" alt="PRs" />
-  <img src="https://img.shields.io/badge/✅_Merged-{stats['merged_prs']:,}_({stats['merge_rate']}%25)-238636?style=for-the-badge&labelColor=151515&color=151515" alt="Merged" />
-  <img src="https://img.shields.io/badge/❗_Issues-{stats['total_issues']:,}-f0883e?style=for-the-badge&labelColor=151515&color=151515" alt="Issues" />
-  <img src="https://img.shields.io/badge/👥_Followers-{stats['followers']:,}-a371f7?style=for-the-badge&labelColor=151515&color=151515" alt="Followers" />
+  <img src="https://img.shields.io/badge/🔄_Pull_Requests-{stats['total_prs']:,}-238636?style=for-the-badge&labelColor=151515&color=151515" alt="PRs" width="240" />
+  <img src="https://img.shields.io/badge/✅_Merged-{stats['merged_prs']:,}_({stats['merge_rate']}%25)-238636?style=for-the-badge&labelColor=151515&color=151515" alt="Merged" width="240" />
 </p>
 <!-- END_GITHUB_STATS -->'''
 
