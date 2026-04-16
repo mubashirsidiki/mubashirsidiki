@@ -34,17 +34,17 @@
 
 ### 🧑‍💻 Tech I work on:
 
-<p align="center">
-  <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python" width="55" height="55"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" alt="fastapi" width="55" height="55"/>
-  <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="ts" width="55" height="55"/>
-  <img src="https://www.vectorlogo.zone/logos/docker/docker-official.svg" alt="docker" width="60" height="50"/>
-  <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="55" height="55"/>
-  <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongodb" width="45" height="55"/>
-  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="postgres" width="45" height="55"/>
-  <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="react" width="45" height="45"/>
-  <img src="https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg" alt="vercel" width="45" height="45"/>
-</p>
+<div align="center" style="white-space: nowrap;">
+  <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python" width="50" height="50" style="display:inline-block; vertical-align:middle; margin:0 6px;"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" alt="fastapi" width="50" height="50" style="display:inline-block; vertical-align:middle; margin:0 6px;"/>
+  <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="ts" width="50" height="50" style="display:inline-block; vertical-align:middle; margin:0 6px;"/>
+  <img src="https://www.vectorlogo.zone/logos/docker/docker-official.svg" alt="docker" width="55" height="45" style="display:inline-block; vertical-align:middle; margin:0 6px;"/>
+  <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="50" height="50" style="display:inline-block; vertical-align:middle; margin:0 6px;"/>
+  <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongodb" width="42" height="50" style="display:inline-block; vertical-align:middle; margin:0 6px;"/>
+  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="postgres" width="42" height="50" style="display:inline-block; vertical-align:middle; margin:0 6px;"/>
+  <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="react" width="42" height="42" style="display:inline-block; vertical-align:middle; margin:0 6px;"/>
+  <img src="https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg" alt="vercel" width="42" height="42" style="display:inline-block; vertical-align:middle; margin:0 6px;"/>
+</div>
 
 ---
 
