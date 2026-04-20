@@ -26,7 +26,7 @@
 - 🏆 Winner of Traversaal x Optimized AI Hackathon, judged by Google & NVIDIA engineers.
 - 🌍 Co-founder of [Hoopoes](https://github.com/hoopoes), empowering devs through open-source collaboration.
 - 🛠️ I use daily: **.py**, **.ts**, **.js**, **.sql**, **bash**
-- ⚙️ I build with: **React/Next.js**, **FastAPI**, **Docker**, **Azure**, **MongoDB**, **Postgres**, **LangChain**, **Twilio**
+- ⚙️ I build with: **React/Next.js**, **FastAPI**, **Docker**, **Azure**, **MongoDB**, **Postgres**, **LangChain**, **Twilio**, **n8n**, and automation workflows
 - 💬 Talk to me about full stack development, system design, AI integration, OSS, or cricket!
 - ⚡ Fun fact: I fell in love with coding early; now it's how I shape ideas into reality.
 
