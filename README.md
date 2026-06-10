@@ -54,8 +54,8 @@
 
 <!-- START_GITHUB_STATS -->
 <p align="center">
-  <img src="https://img.shields.io/badge/🔄_Pull_Requests-192-238636?style=for-the-badge&labelColor=151515&color=151515" alt="PRs" width="240" />
-  <img src="https://img.shields.io/badge/✅_Merged-171_(89.1%25)-238636?style=for-the-badge&labelColor=151515&color=151515" alt="Merged" width="240" />
+  <img src="https://img.shields.io/badge/🔄_Pull_Requests-193-238636?style=for-the-badge&labelColor=151515&color=151515" alt="PRs" width="240" />
+  <img src="https://img.shields.io/badge/✅_Merged-172_(89.1%25)-238636?style=for-the-badge&labelColor=151515&color=151515" alt="Merged" width="240" />
 </p>
 <!-- END_GITHUB_STATS -->
 
@@ -78,7 +78,7 @@
 { █████████████▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ }
 ```
 
-**43.59%** completed • 🗓️ 09-Jun-2026
+**43.87%** completed • 🗓️ 10-Jun-2026
 
 </div>
 
