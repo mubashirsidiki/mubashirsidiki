@@ -84,7 +84,11 @@
 
 ---
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=mubashirsidiki&theme=react-dark&hide_border=true&area=true)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mubashirsidiki/mubashirsidiki/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mubashirsidiki/mubashirsidiki/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/mubashirsidiki/mubashirsidiki/output/github-snake.svg" />
+</picture>
 
 
 ### 📌 A Quote I Like:
@@ -96,5 +100,7 @@
 
 ---
 
-### <img align='center' src='https://media2.giphy.com/media/UQDSBzfyiBKvgFcSTw/giphy.gif' width='29' /> Here’s some humor for you:
+<!--
+### <img align=’center’ src=’https://media2.giphy.com/media/UQDSBzfyiBKvgFcSTw/giphy.gif’ width=’29’ /> Here’s some humor for you:
 <img src="https://readme-jokes.vercel.app/api" alt="Refresh for a new joke" width="11000" />
+-->
